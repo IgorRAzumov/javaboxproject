@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<StackPane xmlns:fx="http://javafx.com/fxml/1" fx:id="authStackPane" xmlns="http://javafx.com/javafx/8.0.121" fx:controller="ru.geekbrains.client.controllers.AuthController">
+
+
+    <GridPane fx:id="signInGrid" alignment="center" hgap="10" managed="false" styleClass="root" vgap="10" visible="false">
+        <Label fx:id="signInText" text="SIGN IN" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="0" />
+        <Label text="Login:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <TextField fx:id="loginFieldSignIn" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <Label text="Password:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <PasswordField fx:id="passwordFieldSignIn" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <HBox alignment="bottom_right" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="4">
+            <Button fx:id="getAuthorizationButton" onAction="#signInButtonClick" text="SIGN IN" />
+            <Button fx:id="backSignInButton" onAction="#showStartPanel" text="BACK" />
+        </HBox>
+        <CheckBox fx:id="rememberCheckBox" mnemonicParsing="false" text="Remember me" GridPane.rowIndex="4" />
+        <Label fx:id="messageErrorSignInText" GridPane.columnIndex="0" GridPane.columnSpan="3" GridPane.rowIndex="6" />
+    </GridPane>
+
+    <GridPane fx:id="signUpGrid" alignment="center" hgap="10" managed="false" styleClass="root" vgap="10" visible="false">
+        <Label fx:id="signUpText" text="SIGN UP" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="0" />
+        <Label text="User Name:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <TextField fx:id="userNameFieldSignUp" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <Label text="Login:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <TextField fx:id="loginFieldSignUp" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <Label text="Password:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+        <PasswordField fx:id="passwordFieldSignUp" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <Label text="Confirm Password:" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+        <PasswordField fx:id="confirmPasswordFieldSignUp" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+        <Label text="Email:" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+        <TextField fx:id="emailFieldSignUp" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+        <HBox alignment="bottom_right" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="6">
+            <Button fx:id="getRegistrationButton" onAction="#signUpButtonClick" text="SIGN UP" />
+            <Button fx:id="backSignUpButton" onAction="#showStartPanel" text="BACK" />
+        </HBox>
+        <Label fx:id="messageErrorSignUpText" GridPane.columnIndex="0" GridPane.columnSpan="3" GridPane.rowIndex="7" />
+    </GridPane>
+
+    <GridPane fx:id="startGrid" alignment="center" hgap="10" styleClass="root" vgap="10" StackPane.alignment="CENTER">
+        <Label fx:id="welcomeText" text="FILE STORAGE CLIENT" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="0" />
+        <Button onAction="#signInMenuButtonClick" text="SIGN IN" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <Button onAction="#signUpMenuButtonClick" text="SIGN UP" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+        <Button onAction="#exitButtonClick" text="EXIT" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+    </GridPane>
+
+    <stylesheets>
+        <URL value="@/css/login.css" />
+    </stylesheets>
+</StackPane>

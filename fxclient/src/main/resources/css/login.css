@@ -1,0 +1,57 @@
+
+root {
+    display: block;
+}
+
+.root {
+     -fx-background-image: url("/authBackground.jpg");
+     -fx-background-size: cover;
+}
+
+.label {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffff00;
+}
+
+#welcomeText {
+   -fx-font-size: 26px;
+   -fx-font-family: "Arial Black";
+    -fx-text-fill: #ff0000;
+   -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+
+#signInText,  #signUpText {
+    -fx-font-size: 28px;
+    -fx-font-family: "Arial Black";
+    -fx-fill: #faf5ab;
+    -fx-text-fill: #adff2f;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.5) , 6, 0.0 , 0 , 2 );
+ }
+
+#rememberCheckBox{
+    -fx-font-size: 12px;
+    -fx-text-fill: #faf5ab;
+}
+
+#actionTarget {
+  -fx-fill: FIREBRICK;
+  -fx-font-weight: bold;
+  -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+
+.button {
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+     -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(#2A5058, #61a2b1);
+}
+.button:pressed {
+    -fx-background-color: linear-gradient(#EF9A9A,#B71C1C);
+}

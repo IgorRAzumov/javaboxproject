@@ -1,0 +1,30 @@
+root {
+    display: block;
+}
+
+.root {
+     -fx-background-image: url("/authBackground.jpg");
+     -fx-background-size: cover;
+}
+
+/*.label {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffff00;
+}*/
+
+.button {
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(#2A5058, #61a2b1);
+}
+.button:pressed {
+    -fx-background-color: linear-gradient(#EF9A9A,#B71C1C);
+}
